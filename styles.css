@@ -1,0 +1,782 @@
+body, h1, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+/* Mobile styles (default) */
+
+header {
+   display: flex;
+   justify-content: space-between;
+   padding: 11px 16px;
+   margin-bottom: 10px;
+}
+
+/*Hero section*/
+
+.hero {
+    background: #131c30;
+    padding: 47px 16px;
+    color: white;
+    justify-content: center;
+    
+   
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-family: 'FontspringDemoProximaNova-Bold', sans-serif;
+    
+}
+
+.hero p {
+    font-size: 14px;
+    font-family: 'Inter-Regular', sans-serif;
+    text-align: left;
+    line-height: 200%;
+    font-weight: 400;
+    margin: 25.3px 0;
+}
+
+#Trumpet {
+    color: #6960F5;
+}
+
+.hero .testimonial {
+    display: flex;
+
+    
+}
+
+.testimonial img {
+    box-sizing: border-box;
+   
+    
+}
+
+/* to make the dot in front of the li show*/
+
+.testimonial ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+}
+
+.testimonial li::before {
+    content: '\2022';
+    margin-right: 5px;
+}
+
+.testimonial li {
+    padding-left: 40px;
+    font-size: 12px;
+
+}
+
+/* for the explore courses button */
+
+.hero-button {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #6960F5;
+    text-align: center;
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 30px;
+    border-radius: 6.03px;
+
+}
+
+/* to make the playing man absolute */
+
+.playing-man {
+    position: relative;
+    
+}
+
+.playing-man img {
+    position: absolute;
+    z-index: 1;
+}
+
+#man-playing {
+    position: relative;
+    z-index: 2;
+}
+
+#big-a {
+    top: 62.17px;
+    left: 98.42px;
+}
+
+#small-a {
+    top: 225.73px;
+    left: 0.07px;
+}
+
+.our-clients{
+    margin: 43px 16px;
+}
+.our-clients h2 {
+    font-family: 'FontspringDemoProximaNova-Bold', sans-serif;
+    font-size: 24px;
+    line-height: 44px;
+    font-weight: 700;
+    color: #131d30;
+}
+
+.our-clients p {
+    font-family: 'Inter-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    color: rgba(26, 26, 26, 0.64);
+    margin-bottom: 20px;
+
+}
+
+/*the text under clients*/
+
+#text-under-clients {
+    padding-left: 15.5px;
+    padding-right: 15.5px;
+}
+
+#text-under-clients h1 {
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 32px;
+}
+
+#text-under-clients p {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.20813153684139252px;
+    text-align: left;
+    color: #1A1A1AA3;
+
+
+}
+
+/* logo under clients */
+
+.logo {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+#bigger-trumpet {
+    margin-top: 60px;
+}
+
+/*portion displaying student count*/ 
+
+.count {
+    background: #6B61F5;
+    padding: 44.02px 16.08px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+
+}
+
+.count h1 {
+    color: white;
+    font-family: Inter;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+/*specific count*/
+
+.count p {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+}
+
+.specific-count {
+    display:grid;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns:  1fr 1fr;
+    gap:38.96px 19.07px;
+    justify-items: center;
+    align-items: center;
+}
+
+/* Courses and testimonials generally */ 
+
+.courses-section, .testimonials {
+    padding: 18px;
+}
+
+.courses-section h3, .testimonials h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #6960F5;
+
+}
+
+.courses-section h1, .testimonials h1 {
+    font-family: "FontspringDemoProximaNova-Bold", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #384A62;
+    margin-top: 61px;
+}
+
+.course-cards, .testimonial-cards {
+    margin-top: 27.09px;
+    position: relative;
+    background-color: #eaf0fa;
+    padding-bottom: 20px;
+    border: 0.59px solid #ADC4EB;
+}
+
+.course-cards img {
+    z-index: 2;
+    position: absolute;
+
+}
+
+.text-in-each-course h3 {
+    font-family: "FontspringDemoProximaNova-Bold", sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #131D30;
+}
+
+.text-in-each-course p {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#4E6269;
+    ;
+
+}
+    
+.back-rectangle {
+    background: #7FA4E14D;
+    width: 323.56px;
+    height: 170.98px;
+    margin-left: 15.44px;
+    z-index: 1;
+}
+
+.text-in-each-course, .text-in-each-testimonial {
+    display: grid;
+    gap: 14.84px;
+    margin: 20px 33.02px;
+
+}
+
+.white-button {
+    width: 118.53px;
+    height: 33.87px;
+    padding: 8.53px 16.11px 8.34px 15.8px;
+    border-radius: 6.77px;
+    gap: 5.6px;
+    background-color: white;
+
+}
+
+.white-button p {
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:#131D30;
+    ;
+
+}
+
+#course2 {
+    background-color: #f4e8e7;
+}
+
+#course3 {
+    background-color: #e6f4eb;
+}
+
+#course4 {
+    background-color: #fff5db ;
+}
+
+#course5 {
+    background-color: #edf8fc;
+}
+
+#course6 {
+    background-color: #f0e1f9 ;
+}
+
+
+/*TESTIMONIAL SECTION */
+
+.testimonial-date {
+    font-family: Archivo;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #4E6269;
+}
+
+.testimonial-cards {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 13px;
+}
+
+.testimonials h1 {
+    margin-top: 0px ;
+}
+
+.testimonials {
+    margin-top: 61px;
+}
+
+.testimonial-cards > img {
+    margin-top: 19px;
+}
+
+.text-in-each-testimonial h3 {
+    font-family: "FontspringDemoProximaNova-Bold", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1A1A1A;
+    margin: 0;
+}
+
+.text-in-each-testimonial p {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #4E6269;
+
+
+}
+
+/* Contact section */
+
+.contact-us {
+    display: grid;
+    gap: 32px;
+    background-image: url('public/images/contact\ background.png');
+    padding: 81px 12px;
+    justify-content: center;
+}
+
+.contact-us h1 {
+
+    font-family: Inter;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    
+
+}
+
+.contact-us p {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    width: 298px;
+    height: 51px;
+    margin: auto;
+}
+
+.contact-button {
+    display: flex;
+    padding: 20px, 40px, 20px, 40px;
+    border-radius: 4.13px;
+    gap: 8px;
+    background-color: #6960F5;
+    justify-content: center;
+
+}
+
+.contact-button h4 {
+    font-family: Satoshi;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+
+}
+
+
+/* Footer section */
+
+footer {
+    background-color: #605bdd;
+    margin: 32px 15px;
+    border-radius: 10px;
+    padding: 32px 21.5px;
+}
+
+footer p, footer h4 {
+    color: white;
+}
+
+
+#footer-first-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 32px;
+
+}
+
+footer p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 24px;
+
+}
+
+footer h4 {
+    margin-top: 40px;
+}
+
+
+/* For mobile responsiveness */
+
+.desktop-only {
+    display: none;
+}
+
+
+/* Tablet styles */
+@media (min-width: 768px) {
+
+    /*desktop and tablet responsiveness */
+
+    /* CSS Reset */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    .desktop-only {
+        display: block;
+    }
+
+    .mobile-only {
+        display: none;
+    }
+
+    /* for the header section */ 
+
+    ul {
+        list-style-type: none;
+        display: flex;
+    }
+
+    .nav-menu ul li a, .nav-button a {
+        text-decoration: none;
+        color: #090909;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    header {
+        justify-content:space-between;
+        align-items: center;
+        padding: 0px 66px;
+        height: 113px;
+    }
+
+    .nav-menu ul, .nav-button ul {
+        display: flex;
+        gap: 54px;
+    }
+
+  .nav-button > ul > li:first-of-type > a {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    background-color: #6960F5;
+    padding: 8px 24px;
+    border-radius: 4px;
+    height: 56px;
+
+  }
+
+  .nav-button > ul > li:nth-of-type(2) > a {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: #E4E4FB;
+    color: #6960F5;
+    border-radius: 4px;
+    padding: 10px 45px;
+    height: 55.1px;
+
+
+
+  }
+
+  /* hero section */
+  
+  .hero {
+    padding: 0px 66px;
+    display: flex;
+    justify-content: space-between;
+  }
+    
+  
+
+  .first-hero-portion {
+    margin-top: 77px;
+    width: 600px;
+    display: grid;
+    gap: 25.3px;
+    margin-bottom: 60px;
+    
+  }
+
+  .hero h1 {
+    font-size: 63px;
+    font-weight: 700;
+    line-height: 77px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+    
+  .hero p {
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25.67px;
+    text-align: justified;
+
+  }
+
+  .testimonial ul li {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: left;
+
+  }
+
+
+
+  .second-hero-portion {
+    padding-right: 50px;
+    width: 400px;
+  }
+
+
+
+  .playing-man {
+    position: relative;
+    width: 100%;
+    height: auto;
+    
+  }
+
+  .playing-man img {
+    width: 100%; /* Make the image fill the width of the container */
+    height: 100%; /* Make the image fill the height of the container */
+    object-fit: contain;
+    
+  }
+
+  #small-a {
+    top: 240px;
+    width: 60%;
+    height: 80%;
+  }
+
+  #big-a {
+    top: 50px;
+  }
+
+  #man-playing {
+    top: 17px;
+  }
+  
+  /* our clients section */ 
+
+  .our-clients {
+    text-align: center;
+    background-color: #fafaf4;
+    margin: 0;
+    padding: 60px 0;
+  }
+
+  .our-clients h2 {
+    font-family: "FontspringDemoProximaNova-Bold", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 8px;
+
+  }
+
+  .our-clients p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+
+  }
+
+  .desktop-logo {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+
+  }
+
+ 
+ /* Text under clients section */ 
+
+ #text-under-clients {
+    padding: 112px 64px;
+ }
+
+ #text-under-clients h4 {
+    font-family: "Poppins", sans-serif;
+    font-size: 25.49px;
+    font-weight: 400;
+    line-height: 29.67px;
+    text-align: left;
+    color: #6960F5;
+    font-style: normal;
+
+
+ }
+    
+ .text-under-clients-first {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+ }
+
+
+ .text-under-clients-one, .text-under-clients-two {
+    width: 50%;
+
+ }
+
+ .text-under-clients-one h1 {
+    font-family: "FontspringDemoProximaNova-Bold", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.85px;
+
+ }
+
+#bigger-trumpet {
+    width: 100%;
+}
+ 
+/* For count section */
+
+.count {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+
+}
+
+.count div {
+    width: 50%;
+}
+
+.count h1 {
+
+}
+
+.count p {
+    
+}
+}
+
+/* Desktop styles */
+@media (min-width: 1200px) {
+    
+    /* for desktop responsiveness */
+    
+    
+    
+}
